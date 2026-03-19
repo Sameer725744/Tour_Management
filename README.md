@@ -63,9 +63,14 @@ The **Tour Management System** is a full-stack, feature-rich traveling website b
 ### Backend
 - 🟢 **Node.js** - Runtime environment
 - 🚂 **Express.js** - Web framework
-- 🗄️ **MongoDB** - NoSQL database
+- 🗄️ **MongoDB Atlas** - Cloud NoSQL database
 - 🔑 **JWT** - Authentication
 - 🔒 **Bcrypt** - Password hashing
+
+### Database
+- 💾 **MongoDB Atlas** - Cloud-hosted database
+- 🔗 **Mongoose** - ODM for MongoDB
+- ☁️ **Cloud Cluster** - cluster0.o8izv7k.mongodb.net
 
 ---
 
@@ -93,17 +98,20 @@ The **Tour Management System** is a full-stack, feature-rich traveling website b
 
 ### Prerequisites
 - Node.js (v18 or higher)
-- MongoDB (local or Atlas)
+- MongoDB Atlas account (or local MongoDB)
 - npm or yarn
+
+### Quick Start ⚡
+See [QUICK_START.md](QUICK_START.md) for step-by-step instructions!
 
 ### Backend Setup
 ```bash
 cd backend
 npm install
-cp .env.example .env
-# Configure your MongoDB URI in .env
+# MongoDB Atlas connection already configured in .env
 npm start
 ```
+The backend will connect to MongoDB Atlas automatically.
 
 ### Frontend Setup
 ```bash
