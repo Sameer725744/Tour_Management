@@ -1,0 +1,322 @@
+/* Admin Dashboard Styles */
+.admin-dashboard {
+  min-height: 100vh;
+  background: #f8f9fa;
+}
+
+/* Admin Header */
+.admin-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 60px 0;
+  color: #fff;
+}
+
+.admin-header-content {
+  text-align: center;
+}
+
+.admin-header-content h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #fff !important;
+}
+
+.admin-header-content p {
+  font-size: 1.2rem;
+  opacity: 0.95;
+  margin: 0;
+}
+
+/* Stats Section */
+.stats-section {
+  padding: 60px 0;
+}
+
+.stat-card {
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: none;
+  transition: transform 0.3s ease;
+  background: #fff;
+  margin-bottom: 2rem;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-icon {
+  font-size: 3.5rem;
+  margin-right: 1.5rem;
+}
+
+.stat-content h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.stat-content p {
+  margin: 0;
+  color: var(--text-color);
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* Tours Management */
+.tours-management {
+  padding: 60px 0;
+}
+
+.section-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-header h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: var(--heading-color);
+}
+
+.tours-table-card {
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: none;
+  overflow: hidden;
+}
+
+.table-responsive {
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+.tours-table {
+  margin-bottom: 0;
+}
+
+.tours-table thead {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+  color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.tours-table thead th {
+  padding: 1.5rem;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  text-align: left;
+}
+
+.tours-table tbody tr {
+  transition: all 0.3s ease;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.tours-table tbody tr:hover {
+  background: #f8f9fa;
+  transform: scale(1.01);
+}
+
+.tours-table tbody td {
+  padding: 1.5rem;
+  vertical-align: middle;
+}
+
+.tour-name {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.tour-thumb {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.rating-badge {
+  background: #fff3cd;
+  color: #856404;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  display: inline-block;
+}
+
+.badge {
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+.badge-featured {
+  background: #d4edda;
+  color: #155724;
+}
+
+.badge-normal {
+  background: #e2e3e5;
+  color: #383d41;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-edit {
+  background: #17a2b8 !important;
+  border: none !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 8px !important;
+  font-size: 0.9rem !important;
+}
+
+.btn-delete {
+  background: #dc3545 !important;
+  border: none !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 8px !important;
+  font-size: 0.9rem !important;
+}
+
+/* Quick Actions */
+.quick-actions {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.action-card {
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  border: none;
+  transition: all 0.3s ease;
+  margin-bottom: 2rem;
+  background: #fff;
+}
+
+.action-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+.action-icon {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+}
+
+.action-card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: var(--heading-color);
+}
+
+.action-card p {
+  color: var(--text-color);
+  margin-bottom: 1.5rem;
+  font-size: 1rem;
+}
+
+.action-card .primary__btn {
+  background: var(--primary-color) !important;
+  border: none !important;
+  padding: 0.75rem 2rem !important;
+  font-size: 1rem !important;
+  border-radius: 50px !important;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.action-card .primary__btn:hover {
+  background: var(--secondary-color) !important;
+  transform: scale(1.05);
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .admin-header-content h1 {
+    font-size: 2rem;
+  }
+
+  .stat-card {
+    margin-bottom: 1.5rem;
+  }
+
+  .table-responsive {
+    max-height: none;
+    overflow-x: auto;
+  }
+
+  .tours-table {
+    font-size: 0.9rem;
+  }
+
+  .tour-thumb {
+    width: 40px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .admin-header {
+    padding: 40px 0;
+  }
+
+  .admin-header-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .admin-header-content p {
+    font-size: 1rem;
+  }
+
+  .stats-section,
+  .tours-management,
+  .quick-actions {
+    padding: 40px 0;
+  }
+
+  .section-header h2 {
+    font-size: 2rem;
+  }
+
+  .action-buttons {
+    flex-direction: column;
+  }
+
+  .btn-edit,
+  .btn-delete {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .stat-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .stat-icon {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .stat-content h3 {
+    font-size: 2rem;
+  }
+}

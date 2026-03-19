@@ -1,0 +1,368 @@
+/* Carousel Section */
+.tour-carousel-section {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+.carousel-container {
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.carousel-slide {
+  position: relative;
+  height: 500px;
+}
+
+.carousel-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.carousel-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.6) 100%);
+}
+
+.carousel-text {
+  position: absolute;
+  bottom: 60px;
+  left: 60px;
+  color: #fff;
+  z-index: 10;
+}
+
+.carousel-text h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  color: #fff !important;
+}
+
+.carousel-text p {
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.carousel-price {
+  display: inline-block;
+  background: var(--primary-color);
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  box-shadow: 0 10px 30px rgba(255, 126, 1, 0.4);
+}
+
+.price-label {
+  display: block;
+  font-size: 0.9rem;
+  opacity: 0.9;
+  margin-bottom: 0.3rem;
+}
+
+.price-amount {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+/* Slick carousel customization */
+.slick-dots li button:before {
+  color: #fff !important;
+  font-size: 12px !important;
+  opacity: 0.7;
+}
+
+.slick-dots li.slick-active button:before {
+  opacity: 1;
+  color: var(--primary-color) !important;
+}
+
+.slick-prev,
+.slick-next {
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.3) !important;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.slick-prev:hover,
+.slick-next:hover {
+  background: rgba(255, 255, 255, 0.5) !important;
+}
+
+.slick-prev {
+  left: 30px;
+}
+
+.slick-next {
+  right: 30px;
+}
+
+/* Search & Filter Section */
+.search-filter-section {
+  padding: 60px 0;
+  background: #fff;
+}
+
+.filter-section-title {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  color: var(--heading-color);
+}
+
+.category-select {
+  width: 100%;
+  padding: 0.8rem 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-family: var(--font-name);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+  color: var(--heading-color);
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: var(--secondary-color);
+  box-shadow: 0 0 0 3px rgba(250, 169, 53, 0.1);
+}
+
+.tour-count {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  justify-content: center;
+  padding: 1rem;
+  background: linear-gradient(135deg, rgba(255, 126, 1, 0.1) 0%, rgba(250, 169, 53, 0.1) 100%);
+  border-radius: 50px;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.count-badge {
+  background: var(--primary-color);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.count-text {
+  font-size: 1.1rem;
+  color: var(--text-color);
+  font-weight: 500;
+}
+
+/* Tours Grid Section */
+.tours-grid-section {
+  padding: 60px 0;
+  background: #f8f9fa;
+}
+
+.tour-card-wrapper {
+  margin-bottom: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.tour-card-wrapper:hover {
+  transform: translateY(-5px);
+}
+
+/* No Results */
+.no-results {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.no-results-icon {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.no-results h3 {
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+  color: var(--heading-color);
+}
+
+.no-results p {
+  color: var(--text-color);
+  font-size: 1.1rem;
+}
+
+/* Enhanced Pagination */
+.pagination-wrapper {
+  padding: 3rem 0;
+}
+
+.pagination span {
+  width: 3rem;
+  height: 3rem;
+  padding: 0;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid var(--secondary-color);
+  color: var(--heading-color);
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pagination span:hover {
+  background: var(--secondary-color);
+  color: #fff !important;
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px rgba(250, 169, 53, 0.3);
+}
+
+.active_page {
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)) !important;
+  color: #fff !important;
+  border-color: transparent !important;
+  box-shadow: 0 5px 15px rgba(255, 126, 1, 0.4) !important;
+  transform: scale(1.1);
+}
+
+/* Features Banner */
+.features-banner {
+  padding: 60px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+}
+
+.feature-item {
+  text-align: center;
+  padding: 2rem;
+  color: #fff;
+}
+
+.feature-icon-box {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.feature-item h4 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #fff !important;
+}
+
+.feature-item p {
+  font-size: 1rem;
+  opacity: 0.9;
+  margin: 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .carousel-text h2 {
+    font-size: 2.5rem;
+  }
+  
+  .carousel-slide {
+    height: 400px;
+  }
+  
+  .filter-section-title {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-text h2 {
+    font-size: 2rem;
+  }
+  
+  .carousel-text {
+    left: 30px;
+    bottom: 40px;
+  }
+  
+  .price-amount {
+    font-size: 1.5rem;
+  }
+  
+  .slick-prev,
+  .slick-next {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .filter-section-title {
+    font-size: 1.5rem;
+  }
+  
+  .feature-item {
+    margin-bottom: 2rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .carousel-slide {
+    height: 300px;
+  }
+  
+  .carousel-text h2 {
+    font-size: 1.5rem;
+  }
+  
+  .carousel-text p {
+    font-size: 1rem;
+  }
+  
+  .price-amount {
+    font-size: 1.2rem;
+  }
+  
+  .pagination span {
+    width: 2.5rem;
+    height: 2.5rem;
+    font-size: 1rem;
+  }
+}

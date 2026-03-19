@@ -1,0 +1,33 @@
+.auth__wrapper {
+  max-width: 520px;
+  margin: 0 auto;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  border-radius: 12px;
+  padding: 24px;
+  background: #fff;
+}
+
+.auth__wrapper h2 {
+  margin-bottom: 16px;
+}
+
+.auth__wrapper .form-control {
+  padding: 10px 12px;
+}
+
+.auth__actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.auth__error {
+  color: #b00020;
+  margin-top: 10px;
+}
+
+.auth__success {
+  color: #0a7a2c;
+  margin-top: 10px;
+}
