@@ -22,8 +22,8 @@ const Routers = () => {
       <Route path='/login' element={<Login/>} />
       <Route path='/register' element={<Register/>} />
       <Route path='/tour/search' element={<SearchResultList/>} />
-      {/* Hidden Admin Route - Only accessible via direct URL */}
-      <Route path='/admin-panel-x7k9m2' element={<AdminDashboard/>} />
+      {/* Admin Route - Accessible at /admin */}
+      <Route path='/admin' element={<AdminDashboard/>} />
       <Route path='*' element={<NotFound/>} />
     </Routes>
   );
